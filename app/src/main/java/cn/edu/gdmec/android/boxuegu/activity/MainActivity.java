@@ -91,9 +91,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bottom_bar_myinfo_btn:
                 clearBottomImageState();
                 selectDisplayView(2);
-                if (mMyInfoView!=null){
-                    mMyInfoView.setLoginParams(readLoginStatus());
-                }
+                //if (mMyInfoView!=null){
+                //    mMyInfoView.setLoginParams(readLoginStatus());
+                //}
                 break;
             default:
                 break;
@@ -164,13 +164,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void createView(int viewIndex) {
         switch (viewIndex) {
             case 0:
-                if (mCourseView==null){
-                    mCourseView=new CourseView(this);
-                    mBodyLayout.addView(mCourseView.getView());
-                }else {
-                    mCourseView.getView();
-                }
-                mCourseView.showView();
+               // if (mCourseView==null){
+                //    mCourseView=new CourseView(this);
+              //      mBodyLayout.addView(mCourseView.getView());
+               // }else {
+               //     mCourseView.getView();
+               // }
+               // mCourseView.showView();
                 break;
             case 1:
                 if (mExercisesView == null) {
@@ -182,13 +182,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mExercisesView.showView();
                 break;
             case 2:
-                if (mMyInfoView==null){
-                    mMyInfoView=new MyInfoView(this);
-                    mBodyLayout.addView(mMyInfoView.getView());
-                }else {
-                    mMyInfoView.getView();
-                }
-                mMyInfoView.showView();
+            //    if (mMyInfoView==null){
+             //       mMyInfoView=new MyInfoView(this);
+             //       mBodyLayout.addView(mMyInfoView.getView());
+            //    }else {
+             //       mMyInfoView.getView();
+             //   }
+             //   mMyInfoView.showView();
                 break;
         }
     }
