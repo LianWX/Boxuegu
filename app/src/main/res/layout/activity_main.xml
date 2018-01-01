@@ -16,7 +16,7 @@
             android:background="@android:color/white"/>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/mian_bottom_bar"
+        android:id="@+id/main_bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_alignParentBottom="true"
