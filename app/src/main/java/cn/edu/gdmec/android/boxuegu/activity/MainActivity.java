@@ -204,6 +204,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 clearBottomImageState();
                 selectDisplayView(0);
             }
+            if (mMyInfoView!=null){
+                mMyInfoView.setLoginParams(isLogin);
+            }
         }
     }
 
