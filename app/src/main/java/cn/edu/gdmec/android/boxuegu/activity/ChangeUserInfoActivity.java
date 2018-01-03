@@ -31,6 +31,7 @@ public class ChangeUserInfoActivity extends AppCompatActivity{
     private int flag;
     private EditText et_content;
     private ImageView iv_delete;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
