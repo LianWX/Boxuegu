@@ -23,6 +23,7 @@ import cn.edu.gdmec.android.boxuegu.R;
  */
 
 public class ChangeUserInfoActivity extends AppCompatActivity{
+
     private TextView tv_main_title,tv_save;
     private RelativeLayout rl_title_bar;
     private TextView tv_back;
