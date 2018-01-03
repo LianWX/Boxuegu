@@ -44,9 +44,15 @@ public class VideoPlayActivity extends AppCompatActivity{
             Toast.makeText(this,"本地没有此视频，暂无法播放",Toast.LENGTH_SHORT).show();
             return;
         }
-        String Uri="android.resource://"+getPackageName()+"/"+R.raw.video11;
-        videoView.setVideoPath(Uri);
-        videoView.start();
+        if (position==0) {
+            String Uri = "android.resource://" + getPackageName() + "/" + R.raw.video11;
+            videoView.setVideoPath(Uri);
+            videoView.start();
+        }else if (position==1){
+            String Uri = "android.resource://" + getPackageName() + "/" + R.raw.beyond;
+            videoView.setVideoPath(Uri);
+            videoView.start();
+        }
     }
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event){
