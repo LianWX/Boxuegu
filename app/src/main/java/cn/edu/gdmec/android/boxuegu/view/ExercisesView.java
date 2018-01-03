@@ -31,6 +31,7 @@ public class ExercisesView {
     private void createView(){
         initView();
     }
+
     private void initView(){
         mCurrentView=mInflater
                 .inflate(R.layout.main_view_exercises,null);
