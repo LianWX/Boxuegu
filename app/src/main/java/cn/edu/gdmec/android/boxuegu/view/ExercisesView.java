@@ -27,6 +27,7 @@ public class ExercisesView {
         mContext=context;
         mInflater=LayoutInflater.from(mContext);
     }
+
     private void createView(){
         initView();
     }
