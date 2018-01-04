@@ -33,9 +33,6 @@ public class VideoListAdapter extends BaseAdapter{
     public void setData(List<VideoBean> vbl){
         this.vbl=vbl;
         notifyDataSetChanged();
-
-
-        
     }
     @Override
     public int getCount(){
